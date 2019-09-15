@@ -39,7 +39,7 @@ class HftModel1(BaseModel):
 		# Strategy params
 		self.volatility_ratio = 1
 		self.beta = 0
-		self.moving_window_period = dt.timedelta(hours=1)
+		self.moving_window_period = dt.timedelta(minutes=1)
 		self.is_buy_signal, self.is_sell_signal = False, False
 
 	def run(self, to_trade=[], trade_qty=0):

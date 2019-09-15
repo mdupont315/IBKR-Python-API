@@ -10,7 +10,7 @@ For other models to extend and use.
 
 
 class BaseModel(object):
-	def __init__(self, host='127.0.0.1', port=7497, client_id=1):
+	def __init__(self, host='127.0.0.1', port=4002, client_id=1):
 		self.host = host
 		self.port = port
 		self.client_id = client_id
@@ -61,7 +61,7 @@ class BaseModel(object):
 
 	def request_all_contracts_data(self, fn_on_tick):
 		for contract in self.contracts:
-			self.ib.reqMktData(contract)
+			self.ib.reqMktData(contract,)
 
 		self.ib.pendingTickersEvent += fn_on_tick
 
