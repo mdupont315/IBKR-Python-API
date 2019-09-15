@@ -2,18 +2,23 @@ Purpose
 ===
 A simple trading equity trading model on Interactive Brokers' API dealing with (pseudo) high-frequency data studies.
 
-![alt text](https://github.com/jamesmawm/High-Frequency-Trading-Model-with-IB/blob/v3.0/sample_output/videoshot.gif?raw=true "Chart output")
-
 Requirements
 ===
 
 - Python 3.7
 - IB Trader Workstation Build 973.2
 - IB paper or live trading account
-- (Optional) Docker and docker-compose
 
 What's new
 ===
+
+*14 Jun 2019*
+
+- <a href="https://github.com/jamesmawm/High-Frequency-Trading-Model-with-IB/tree/v2.0">Version 2.0</a> released
+### - Merged pull request from: https://github.com/chicago-joe/IB_PairsTrading_Algo
+    
+##    Special Thanks to [chicago-joe](https://github.com/chicago-joe) for updating to work with Python 3.
+  
 
 *19 Jun 2019*
 
@@ -21,28 +26,10 @@ What's new
 - `ibpy` library is dropped in favour of the newer `ib_insync` library.
 - The same code logic is ported over to use the features of `ib_insync`, compatible with Python 3.7. Includes various code cleanup.
 - Dropped `matplotlib` charting in favour of headless running inside Docker.
-
-
-*14 Jun 2019*
-
-- <a href="https://github.com/jamesmawm/High-Frequency-Trading-Model-with-IB/tree/v2.0">Version 2.0</a> released
-- Merged pull request from: https://github.com/chicago-joe/IB_PairsTrading_Algo
     
-    Thanks to chicago-joe for updating to work with Python 3.
-    
-    As this is only a compatibility update, there are many outdated components and the trading model is quite unlikely to be working as intended.
-    
-
-*8 Jun 2015*
-- <a href="https://github.com/jamesmawm/High-Frequency-Trading-Model-with-IB/tree/v1.0">Version 1.0</a> released
-- Refactor and conform to PEP8 standards
-- New chart display with 4 subplots
-
 
 Setting up
 ===
-
-You can choose to run this model in your console OR in Docker.
 
 ## Running on a local Python console 
 
